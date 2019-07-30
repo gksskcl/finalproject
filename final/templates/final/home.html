@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .container {
+      position: relative;
+      width: 100%
+    }
+    
+    .container img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .container .btn {
+      position: absolute;
+      top: 22%;
+      left: 58%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 25px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .container .btn1 {
+      position: absolute;
+      top: 79%;
+      left: 59%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 25px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .container .btn2 {
+      position: absolute;
+      top: 83%;
+      left: 79.5%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 25px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .container .btn3 {
+      position: absolute;
+      top: 77%;
+      left: 15.5%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 23px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .container .btn4 {
+      position: absolute;
+      top: 50%;
+      left: 33.5%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 23px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center;
+    }
+        .container .btn:hover {
+    background-color: black;
+    }
+    .container .btn1:hover {
+    background-color: black;
+    }
+    .container .btn2:hover {
+    background-color: black;
+    }
+    .container .btn3:hover {
+    background-color: black;
+    }
+    .container .btn4:hover {
+    background-color: black;
+    }
+    </style>
+    
+    
+</head>
+
+<body>
+    
+    <div class="container">
+        <br>
+        <h2>Travel Diary</h2>
+        <p>Write your travel diary</p>
+        <br>
+            <div class="container">
+                <img src="worldmap.jpg" alt="worldmap" style="width:100%">
+                    <a href="{% url 'Europe' %}">
+                    <button class="btn">Europe</button>
+                    </a>    
+
+                    <a href="{% url 'Africa' %}">
+                    <button class="btn1">Africa</button>
+                    </a>    
+
+                    <a href="{% url 'Australia' %}">
+                    <button class="btn2">Australia</button>
+                    </a>    
+
+                    <a href="{% url 'South_America' %}">
+                    <button class="btn3">South<br>America</button>
+                    </a>  
+
+                    <a href="{% url 'North_America' %}">
+                    <button class="btn4">North<br>America</button>
+                    </a>  
+
+                  </div>
+    </div>
+
+        
+
+</body>
